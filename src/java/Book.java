@@ -16,6 +16,10 @@ public class Book {
         return longStoryString.split("\n")[p-1];
     }
 
+    public int getNumberOfParagraphs(){
+        return this.paragraphs;
+    }
+
     private void countParagraph(String longString){
         if(longString.contains("\n")){
             this.paragraphs =+ 1;
