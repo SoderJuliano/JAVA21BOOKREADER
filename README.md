@@ -27,8 +27,12 @@ Copy code
 ``javac --release 21 --enable-preview MainApp.java``
 
 ### Execute o programa:
-Copy code
-``java --enable-preview MainApp``
+
+```
+java --enable-preview MainApp
+
+```
+
 Lembre-se de que você pode substituir MainApp pelo nome da sua classe principal, se necessário. Agora, você está pronto para explorar as novidades do Java 21!
 
 O Projeto
