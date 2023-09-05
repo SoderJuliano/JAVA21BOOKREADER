@@ -18,13 +18,17 @@ git clone https://github.com/SoderJuliano/JAVA21BOOKREADER
 
 
 ### Navegue até o diretório do projeto:
-Copy code
-``cd JAVA21BOOKREAADER/src/java``
-Compile o código-fonte:
+
+```
+cd JAVA21BOOKREAADER/src/java
+```
 
 ### Compile
-Copy code
-``javac --release 21 --enable-preview MainApp.java``
+
+```
+javac --release 21 --enable-preview MainApp.java
+
+```
 
 ### Execute o programa:
 
