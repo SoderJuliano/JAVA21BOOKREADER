@@ -20,6 +20,10 @@ void main() {
     BookRecord book2 = new BookRecord(longStoryString, (int) longStoryString.chars().filter(ch -> ch == '\n').count());
     
     System.out.println("Printing o as an instance of BookRecord using interpolated String template.");
+    
+    // Now we have string builder that make easier manipuling strings making it repeat characteres and insert emojis into.
+    StringBuilder sb = new StringBuilder("HELLO WORLD ");
+    printRecord(sb.repeat(0x1f600, 1));
     printRecord(book2);
 
     System.out.print("\n");
@@ -27,7 +31,7 @@ void main() {
     //Printing book2 in a swticher for know the switcher behavior in java 21.
     System.out.println("Printing book2 in a swticher.");
     printSwitcher(1);
-    printSwitcher("HELLO WORLD");
+    printSwitcher(sb.repeat(0x1f600, 1));
     printSwitcher(book2);
 
 }
@@ -38,11 +42,13 @@ public void printRecord(Object o){
         String interpolatedString = STR."The book has \{i} paragraphs.\nThe book has \{l.chars().filter(ch -> ch == '\n').count()} paragraphs. Calculing inline as you can see.";
         System.out.println(interpolatedString);
         System.out.println(l.split("\n")[2]);
-    } else if (o instanceof BookRecord b) {
-        System.out.println(STR."The book has \{b.paragraphs()} paragraphs.");
-    } else {
-        System.out.println("Book is something else!");
-    }
+
+        // In java 21 we can use Strings.repeat method to repet a string
+        System.out.println("-".repeat(200));
+    } 
+    else if (o instanceof BookRecord b) System.out.println(STR."The book has \{b.paragraphs()} paragraphs."); 
+    else                                System.out.println("Book is something else! "+o);
+    
 }
 
 // Switches and Strings in java 21
