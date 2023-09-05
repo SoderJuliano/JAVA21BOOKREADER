@@ -33,7 +33,6 @@ Este projeto é um leitor de livros simples que utiliza algumas das novas funcio
 Aqui estão alguns exemplos do que você pode fazer com este projeto:
 
 ### java
-Copy code
 
 ```
 // Criar uma instância de BookRecord
