@@ -37,7 +37,9 @@ Copy code
 
 ```
 // Criar uma instância de BookRecord
-BookRecord book = new BookRecord("Texto longo do livro...", 10);```
+BookRecord book = new BookRecord("Texto longo do livro...", 10);
+
+```
 
 ```
 // Imprimir informações sobre o livro
